@@ -67,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="人物簡介" id="3Zq-g1-dt2"/>
+                    <connections>
+                        <outlet property="segmented" destination="tIp-Oc-bx0" id="iGZ-k3-Uq5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +96,7 @@
         <!--View Controller-->
         <scene sceneID="0WQ-FQ-wRg">
             <objects>
-                <viewController id="Ibp-zd-Geh" sceneMemberID="viewController">
+                <viewController id="Ibp-zd-Geh" customClass="HViewController" customModule="Project15" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hnD-YN-UNK">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +107,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hEb-te-C5P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="harry" translatesAutoresizingMaskIntoConstraints="NO" id="hEb-te-C5P">
                                 <rect key="frame" x="16" y="81" width="303" height="414"/>
                             </imageView>
                         </subviews>
@@ -127,12 +130,12 @@
         <!--View Controller-->
         <scene sceneID="bmw-Wp-Wd6">
             <objects>
-                <viewController id="0Gf-n5-Cdh" sceneMemberID="viewController">
+                <viewController id="0Gf-n5-Cdh" customClass="MViewController" customModule="Project15" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8B4-Hb-5eV">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4R-GJ-epL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="hermione" translatesAutoresizingMaskIntoConstraints="NO" id="q4R-GJ-epL">
                                 <rect key="frame" x="16" y="81" width="303" height="414"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hermione Granger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oft-D2-HI6">
@@ -161,12 +164,12 @@
         <!--View Controller-->
         <scene sceneID="hep-9w-X5j">
             <objects>
-                <viewController id="iFY-8r-js2" sceneMemberID="viewController">
+                <viewController id="iFY-8r-js2" customClass="RViewController" customModule="Project15" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zf5-J1-zrl">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-Qh-cK8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ron" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-Qh-cK8">
                                 <rect key="frame" x="16" y="81" width="303" height="414"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ron Weasley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIk-EK-V1h">
@@ -193,4 +196,9 @@
             <point key="canvasLocation" x="1155" y="841"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="harry" width="822" height="1024"/>
+        <image name="hermione" width="402" height="500"/>
+        <image name="ron" width="959" height="1024"/>
+    </resources>
 </document>
