@@ -26,6 +26,9 @@
                                     <segment title="妙麗"/>
                                     <segment title="榮恩"/>
                                 </segments>
+                                <connections>
+                                    <action selector="tabChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YHb-Om-oxM"/>
+                                </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-xd-PUi">
                                 <rect key="frame" x="20" y="132" width="335" height="515"/>
@@ -68,6 +71,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="人物簡介" id="3Zq-g1-dt2"/>
                     <connections>
+                        <outlet property="harry" destination="hmv-xd-PUi" id="bGb-aD-Com"/>
+                        <outlet property="hermione" destination="eIY-5e-dWW" id="Q6f-qw-pyk"/>
+                        <outlet property="ron" destination="gTi-B8-nsQ" id="o2r-vr-he3"/>
                         <outlet property="segmented" destination="tIp-Oc-bx0" id="iGZ-k3-Uq5"/>
                     </connections>
                 </viewController>
@@ -121,6 +127,7 @@
                             <constraint firstItem="hEb-te-C5P" firstAttribute="top" secondItem="QI0-iR-oRk" secondAttribute="bottom" constant="20" id="pzS-BB-IgK"/>
                             <constraint firstItem="QI0-iR-oRk" firstAttribute="leading" secondItem="hnD-YN-UNK" secondAttribute="leadingMargin" id="wpc-Yp-4oE"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="7HJ-2W-0ir"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4DP-74-pUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,6 +162,7 @@
                             <constraint firstItem="Oft-D2-HI6" firstAttribute="leading" secondItem="8B4-Hb-5eV" secondAttribute="leadingMargin" id="sqS-NX-Ka6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q4R-GJ-epL" secondAttribute="trailing" id="ugR-7Z-4SE"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="OcL-rH-ZBn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPB-DG-Dyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,6 +197,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="8Xd-Qh-cK8" secondAttribute="trailing" id="eIN-S9-Hjh"/>
                             <constraint firstItem="yIk-EK-V1h" firstAttribute="top" secondItem="zf5-J1-zrl" secondAttribute="topMargin" constant="20" id="mZP-ZJ-O66"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ayO-ax-vAX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fV1-x4-v10" userLabel="First Responder" sceneMemberID="firstResponder"/>
